@@ -1,0 +1,2 @@
+.container{display:flex}.container .card{background-color:grey;padding:10px}.container .card:first-child .card__actions a{background-color:#41e657;color:#fff;color:blue;font-size:22px;height:39px;padding:.5em;width:110px}.container .card:nth-child(2) .card__actions a{background-color:purple;color:#fff;font-size:22px;height:39px;padding:.5em;width:110px}.container .card:last-child .card__actions a{background-color:red;color:#fff;font-size:22px;height:39px;padding:.5em;width:110px}
+/*# sourceMappingURL=main.css.map */

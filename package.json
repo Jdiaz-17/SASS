@@ -1,7 +1,7 @@
 {
-    "name": "",
+    "name": "uniandesjuandiaz",
     "version": "1.0.0",
-    "description": "Compilar estilos desde uniandesnatura",
+    "description": "Gestor de paquetes para compilar SASS",
     "main": "gulpfile.js",
     "dependencies": {
         "autoprefixer": "^10.3.6",
@@ -9,7 +9,8 @@
         "cssnano": "^5.0.8",
         "gulp": "^4.0.2",
         "gulp-postcss": "^9.0.1",
-        "gulp-sourcemaps": "^3.0.0"
+        "gulp-sourcemaps": "^3.0.0",
+        "postcss": "^8.3.8"
     },
     "scripts": {},
     "author": "StevenAza",
