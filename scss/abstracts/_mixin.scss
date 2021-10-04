@@ -9,6 +9,44 @@
  color: $color;
 }
 
+
+@mixin button-orientation($orientation) {
+    /// Posibles valores
+    /// start
+    /// end
+    /// center
+    /// around
+    /// between
+
+    /// Juan Andres
+    /// $nombre $segundo-nombre
+    display: flex;
+    @if($orientation == start or $orientation == end) {
+        justify-content: flex-#{$orientation};
+    }
+    @else if($orientation == around or $orientation == between) {
+        justify-content: space-#{$orientation};
+    }
+    @else {
+        justify-content: center;
+    }
+}
+
+@mixin media-query($device) {
+    /// phone
+    /// tablet
+    /// desktop
+    /// desktopxl
+
+    @if ($device == phone) {
+        @media screen and (min-width: 320px) and (max-width: 650px) {
+            @content;
+        }
+    }
+
+}
+
+
 /// @desc: Encapsula los estilos correspondientes a un botón.
 /// @param: No aplica.
 @mixin container() {

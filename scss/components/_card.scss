@@ -3,6 +3,7 @@
   .card {
     padding: 10px;
     background-color: $color-grey;
+
     &__image {
     }
     &__actions {
@@ -10,11 +11,23 @@
       }
     }
     &:first-child {
-      .card__actions {
-        a {
-          @include button($color-green,$color:"initial");
-        }  
+      .card {
+        @include media-query(phone) {
+          background-color: teal;
+          &__image {
+            width: 150px;
+            height: auto;
+          }
+        }
+        
+        &__actions {
+          @include button-orientation(center);
+          a {
+            @include button($color-green,$color:"initial");
+          }  
+        }
       }
+
     }
     &:nth-child(2) {
       .card__actions {
