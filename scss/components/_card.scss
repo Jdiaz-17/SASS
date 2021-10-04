@@ -1,11 +1,9 @@
 .container {
   display: flex;
-
   .card {
     padding: 10px;
     background-color: $color-grey;
     &__image {
-
     }
     &__actions {
       a {
@@ -14,23 +12,23 @@
     &:first-child {
       .card__actions {
         a {
-          @include button($color-green);
-          color: initial;
-      }  
+          @include button($color-green,$color:"initial");
+        }  
+      }
     }
     &:nth-child(2) {
       .card__actions {
         a {
-          @include button($color-purple);
+          @include button($color-purple,$color-white);
         }
       }
     }
     &:last-child {
       .card__actions {
         a {
-          @include button($color-red);
+          @include button($color-red,$color-white);
         }
       }
     }
   }
-}
+} 

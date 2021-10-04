@@ -1,12 +1,12 @@
 /// @desc: Encapsula los estilos correspondientes a un botón.
 /// @param: $background - {Color} - Especifica el background que tomará el elemento - Ejemplo: #fff, blue, #000.
-@mixin button($backgroud-color) {
+@mixin button($background-color,$color) {
  height: 39px;
  width: 110px;
  font-size: 22px;
  padding: .5em;
- background-color: $backgroud-color;
- color: $color-white;
+ background-color: $background-color;
+ color: $color;
 }
 
 /// @desc: Encapsula los estilos correspondientes a un botón.
