@@ -43,6 +43,21 @@
             @content;
         }
     }
+    @else if ($device == tablet) {
+        @media screen and (min-width: 760px) and (max-width: 1024px) {
+            @content;
+        }
+    }
+    @else if ($device == desktop) {
+        @media screen and (min-width: 1030px) and (max-width: 1500px) {
+            @content;
+        }
+    }
+    @else if ($device == desktopxl) {
+        @media screen and (min-width: 1600px) {
+            @content;
+        }
+    }
 
 }
 
