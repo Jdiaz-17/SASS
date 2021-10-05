@@ -13,10 +13,14 @@
     &:first-child {
       .card {
         @include media-query(phone) {
-          background-color: $color-green;
+          background-color: $color-red;
           &__image {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: auto;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(tablet) {
@@ -24,6 +28,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktop) {
@@ -31,6 +39,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktopxl) {
@@ -38,6 +50,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         &__actions {
@@ -51,10 +67,13 @@
     &:nth-child(2) {
       .card {
         @include media-query(phone) {
-          background-color: $color-yellow;
           &__image {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: auto;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(tablet) {
@@ -62,6 +81,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktop) {
@@ -69,6 +92,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktopxl) {
@@ -76,6 +103,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         &__actions {
@@ -89,10 +120,13 @@
     &:last-child {
       .card {
         @include media-query(phone) {
-          background-color: $color-red;
           &__image {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: auto;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(tablet) {
@@ -100,6 +134,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktop) {
@@ -107,6 +145,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         @include media-query(desktopxl) {
@@ -114,6 +156,10 @@
           &__image {
             width: 150px;
             height: 50px;
+            .image {
+              width: 140px;
+              height: auto;
+            }
           }
         }
         &__actions {

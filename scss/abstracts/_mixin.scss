@@ -67,3 +67,9 @@
 @mixin container() {
 
 }
+
+/// @desc: Encapsula los estilos correspondientes a una card.
+/// @param: $background - {Color} - Especifica el background que tomará el elemento - Ejemplo: #fff, blue, #000.
+@mixin card($background-color) {
+    background-color: $background-color;
+   } 
