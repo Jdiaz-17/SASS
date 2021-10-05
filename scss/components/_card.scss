@@ -2,173 +2,74 @@
   display: flex;
   .card {
     padding: 10px;
-    background-color: $color-grey;
-
-    &__image {
+    @include media-query(phone) {
+      @include card($color-red);
+      &__image {
+        width: 30px;
+        height: auto;
+        .image {
+          width: 140px;
+          height: auto;
+        }
+      }
     }
-    &__actions {
-      a {
+    @include media-query(tablet) {
+      background-color: $color-purple;
+      &__image {
+        width: 60px;
+        height: auto;
+        .image {
+          width: 280px;
+          height: auto;
+        }
+      }
+    }
+    @include media-query(desktop) {
+      background-color: $color-green;
+      &__image {
+        width: 120px;
+        height: auto;
+        .image {
+          width: 560px;
+          height: auto;
+        }
+      }
+    }
+    @include media-query(desktopxl) {
+      background-color: $color-yellow;
+      &__image {
+        width: 240px;
+        height: auto;
+        .image {
+          width: 1200px;
+          height: auto;
+        }
       }
     }
     &:first-child {
-      .card {
-        @include media-query(phone) {
-          background-color: $color-red;
-          &__image {
-            width: 30px;
-            height: auto;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(tablet) {
-          background-color: $color-purple;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktop) {
-          background-color: $color-red;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktopxl) {
-          background-color: $color-yellow;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        &__actions {
-          @include button-orientation(center);
-          a {
-            @include button($color-green,$color:"initial");
-          }  
-        }
+      &__actions {
+        @include button-orientation(center);
+        a {
+          @include button($color-green,$color:"initial");
+        }  
       }
     }
     &:nth-child(2) {
-      .card {
-        @include media-query(phone) {
-          &__image {
-            width: 30px;
-            height: auto;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(tablet) {
-          background-color: $color-green;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktop) {
-          background-color: $color-purple;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktopxl) {
-          background-color: $color-red;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        &__actions {
-          @include button-orientation(center);
-          a {
-            @include button($color-purple,$color-white);
-          }  
-        }
+      &__actions {
+        @include button-orientation(center);
+        a {
+          @include button($color-purple,$color-white);
+        }  
       }
     }
     &:last-child {
-      .card {
-        @include media-query(phone) {
-          &__image {
-            width: 30px;
-            height: auto;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(tablet) {
-          background-color: $color-yellow;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktop) {
-          background-color: $color-purple;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        @include media-query(desktopxl) {
-          background-color: $color-green;
-          &__image {
-            width: 150px;
-            height: 50px;
-            .image {
-              width: 140px;
-              height: auto;
-            }
-          }
-        }
-        &__actions {
-          @include button-orientation(center);
-          a {
-            @include button($color-red,$color-white);
-          }  
-        }
+      &__actions {
+        @include button-orientation(center);
+        a {
+          @include button($color-red,$color-white);
+        }  
       }
     }
   }
-} 
+}
+
